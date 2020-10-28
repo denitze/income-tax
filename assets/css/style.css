@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;400;600&display=swap');
+
+body {
+    min-height: 80vh;
+    font-family: 'Encode Sans', sans-serif;
+    background: #72a2e949;
+}
+
+.rechner {
+background: #72A2E9;
+color:#444444;
+margin: 10vh 8rem;
+padding:3rem;
+display:flex;
+justify-content: space-between;
+border-radius: 10px;
+}
+
+select {
+    padding: .6rem 2rem;
+    color:#444444;
+}
+
+h1 {
+    margin-top:0;
+    padding-bottom:1vh;
+    border-bottom: 3px solid salmon;
+}
+
+h2 {
+    margin-top: 5vh;
+}
+
+
+.star {
+    color:red;
+}
+input[type=number] {
+    padding:.5rem 1rem;
+    width:50%;
+    margin:2vh 0;
+}
+
+input[type=button] {
+    width:100%;
+    padding:.8rem 1rem; 
+    background:salmon;
+    border:none;
+    border-radius: 5px;
+    color:#444444;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input[type=button]:hover {
+    background: #444444;
+    color: salmon;
+}
+
+.ergebnis {
+    margin-top: 6vh;
+}
+
+#einkommen2 {
+    opacity:0;
+}

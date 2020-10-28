@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="rechner">
+    <form action="">
+        <h1>Einkommenssteuerrechner</h1>
+        <h2><label for="years">Wählen Sie ein Jahr für die Berechnung der Steuer:</label></h2>
+        <select name="years" id="years">
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020" selected>2020</option>
+        </select> 
+
+        <h2>Wie viele Personen leben in Ihrem Haushalt? </h2>
+        <input type="radio" name="people" id="one-person" checked>
+        <label for="people">1 Person </label>
+        <input type="radio" name="people" id="two-people">
+        <label for="people">2 Personen</label>
+
+        <h2><label for="income">Wie hoch ist Ihr Jahreseinkommen? <span class="star">*</span>  </label></h2>
+        <div id="einkommen1">
+        <input type="number" name="income" id="income1" placeholder="z.B. 10.000"> <span class="euro">€</span> 
+        <br>
+        </div>
+        <div id="einkommen2">
+            <input type="number" name="income" id="income2" placeholder="z.B. 10.000"> <span class="euro">€</span> 
+            <br>
+            </div>
+        <input type="button" value="BERECHNEN" onclick="calculateIncome()">
+    </form>
+    <div class="ergebnis" id="result">
+        <!-- <h2>Ihre Einkommenssteuer beträgt:</h2>
+        <h3>Ergebnis HIER</h3> -->
+    </div>
+</div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
