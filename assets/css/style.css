@@ -9,8 +9,8 @@ body {
 .rechner {
 background: #72A2E9;
 color:#444444;
-margin: 10vh 8rem;
-padding:3rem;
+margin: 10vh 8%;
+padding:3%;
 display:flex;
 justify-content: space-between;
 border-radius: 10px;
@@ -63,4 +63,22 @@ input[type=button]:hover {
 
 #einkommen2 {
     opacity:0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .rechner {
+
+        flex-direction: column;
+        }
+
+    }
+
+@media only screen and (max-width: 580px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size:1rem;
+    }
 }
